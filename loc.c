@@ -12,6 +12,7 @@ int main(int argc, char **argv) {
     strcpy(file, argv[1]);
   } else {
     printf("loc: Please specify file\n");
+    return 0;
   }
 
   FILE *fp = fopen(file, "r");
